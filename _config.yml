@@ -1,1 +1,51 @@
-__: aircloud
+# SNS settings
+# 一些社交平台地址，支持以下几种：
+# weibo_username:     
+# zhihu_username:     
+github_username:    imlgw
+# twitter_username:   
+# facebook_username:  
+# linkedin_username:
+
+sidebar_avatar: https://static.imlgw.top/blog/20220821160037.png     # use absolute URL, seeing it's used in both `/` and `/about/`
+avatar_style:
+  radius: true
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# 友情链接
+friends: [
+    {
+        title: "Tadow",
+        href: "https://imlgw.top"
+    },
+    {
+        title: "鄂ICP备18011208号",
+        href: "http://beian.miit.gov.cn/publish/query/indexFirst.action"
+    }
+]
+
+comment:
+  type: giscus
+  script: |
+      <script src="https://giscus.app/client.js"
+        data-repo="imlgw/imlgw.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxMzMyMDY4NDg="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOB_CTQM4CQ7v8"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
+
+donate:
+  img: 
+  content: 感谢鼓励

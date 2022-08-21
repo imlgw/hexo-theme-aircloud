@@ -1,18 +1,18 @@
 
 <footer class="footer">
     <ul class="list-inline text-center">
-        <% if (config.twitter_username) { %>
+        <% if (theme.twitter_username) { %>
         <li>
-            <a target="_blank" href="https://twitter.com/<%= config.twitter_username %>">
+            <a target="_blank" href="https://twitter.com/<%= theme.twitter_username %>">
                             <span class="fa-stack fa-lg">
                                 <i class="iconfont icon-twitter"></i>
                             </span>
             </a>
         </li>
         <% } %>
-        <% if (config.zhihu_username) { %>
+        <% if (theme.zhihu_username) { %>
         <li>
-            <a target="_blank" href="https://www.zhihu.com/people/<%= config.zhihu_username %>">
+            <a target="_blank" href="https://www.zhihu.com/people/<%= theme.zhihu_username %>">
                             <span class="fa-stack fa-lg">
                                  <i class="iconfont icon-zhihu"></i>
                             </span>
@@ -20,9 +20,9 @@
         </li>
         <% } %>
 
-        <% if (config.weibo_username) { %>
+        <% if (theme.weibo_username) { %>
         <li>
-            <a target="_blank" href="http://weibo.com/<%= config.weibo_username %>">
+            <a target="_blank" href="http://weibo.com/<%= theme.weibo_username %>">
                             <span class="fa-stack fa-lg">
                                   <i class="iconfont icon-weibo"></i>
                             </span>
@@ -30,7 +30,7 @@
         </li>
         <% } %>
 
-        <% if (config.facebook_username) { %>
+        <% if (theme.facebook_username) { %>
         <li>
             <a target="_blank" href="https://www.facebook.com/<%= config.facebook_username %>">
                             <span class="fa-stack fa-lg">
@@ -40,9 +40,9 @@
         </li>
         <% } %>
 
-        <% if (config.github_username) { %>
+        <% if (theme.github_username) { %>
         <li>
-            <a target="_blank"  href="https://github.com/<%= config.github_username %>">
+            <a target="_blank"  href="https://github.com/<%= theme.github_username %>">
                             <span class="fa-stack fa-lg">
                                 <i class="iconfont icon-github"></i>
                             </span>
@@ -50,9 +50,9 @@
         </li>
         <% } %>
 
-        <% if (config.linkedin_username) { %>
+        <% if (theme.linkedin_username) { %>
         <li>
-            <a target="_blank"  href="https://www.linkedin.com/in/<%= config.linkedin_username %>">
+            <a target="_blank"  href="https://www.linkedin.com/in/<%= theme.linkedin_username %>">
                             <span class="fa-stack fa-lg">
                                 <i class="iconfont icon-linkedin"></i>
                             </span>
@@ -61,10 +61,10 @@
         <% } %>
 
     </ul>
-    <% if(config.friends) { %>
+    <% if(theme.friends) { %>
     <p>
         <span>/</span>
-        <% config.friends.forEach(function(friend){ %>
+        <% theme.friends.forEach(function(friend){ %>
         <span><a href="<%= friend.href %>"><%= friend.title %></a></span>
         <span>/</span>
         <% }); %>

@@ -1,8 +1,8 @@
 
 <div class="nav" id="nav">
     <div class="avatar-name">
-        <div class="avatar <% if(config.avatar_style && config.avatar_style.radius) {%>radius<% } %>">
-            <img src="<%= config['sidebar-avatar'] %>" />
+        <div class="avatar <% if(theme.avatar_style && theme.avatar_style.radius) {%>radius<% } %>">
+            <img src="<%= theme.sidebar_avatar %>" />
         </div>
         <div class="name">
             <i><%= config.author %></i>
@@ -16,10 +16,16 @@
                     <span><%= __('nav.home') %></span>
                 </a>
             </li>
-            <li <% if(is_current('tags')){ %> <%- "class=active" %> <% } %>>
+            <!-- <li <% if(is_current('tags')){ %> <%- "class=active" %> <% } %>>
                 <a href="<%= url_for(config.tag_dir) %>">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span><%= __('nav.tags') %></span>
+                </a>
+            </li> -->
+            <li <% if(is_current('categories')){ %> <%- "class=active" %> <% } %>>
+                <a href="<%= url_for(config.category_dir) %>">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span><%= __('nav.categories') %></span>
                 </a>
             </li>
             <li <% if(is_current('archive')){ %> <%- "class=active" %> <% } %>>
