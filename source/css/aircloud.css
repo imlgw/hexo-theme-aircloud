@@ -720,7 +720,7 @@ body {
   background-color: rgba(51, 112, 255, 0.1);
 }
 .post-content p img {
-  width: 80%;
+  max-width: 100%;
 }
 .post-content ul,
 .post-content ol {
